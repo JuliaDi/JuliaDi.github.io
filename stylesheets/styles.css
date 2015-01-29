@@ -97,7 +97,7 @@ img {
 
 header {
   width:270px;
-  float:left;
+  float:right;
   position:fixed;
 }
 
@@ -123,8 +123,8 @@ header ul {
 
 header li {
   width:89px;
-  float:left;
-  border-right:1px solid #d2d2d2;
+  float:right;
+  border-left:1px solid #d2d2d2;
   height:40px;
 }
 
@@ -161,7 +161,7 @@ header ul a strong {
 
 section {
   width:500px;
-  float:right;
+  float:left;
   padding-bottom:50px;
 }
 
