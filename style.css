@@ -1,0 +1,24 @@
+/* Stuff */	
+	body, input, select, textarea {
+		color: white;
+		font-family: 'Helvetica', sans-serif;
+		font-size: 15pt;
+		font-weight: 300;
+		letter-spacing: -0.25em;
+		line-height: 1.75em;
+	}
+
+	body {
+		background: lightgray;
+	}
+
+	a {
+		border-bottom: dotted 1px;
+		color: inherit;
+		outline: 0;
+		text-decoration: none;
+	}
+
+		a:hover {
+			border-color: transparent;
+		}
