@@ -5,7 +5,7 @@
 
   <head>
 
-    <title>Julia Di</title>
+    <title>Julia Di | Artist | Engineer</title>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,6 +15,7 @@
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <link rel="stylesheet" href="stylesheets/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -39,30 +40,211 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-
-
   </head>
   
-  <body>
-
+<body>
     <div class="wrapper">
+    <header>
+        <img id="headerpic" src="assets/images/profile.png" alt="JuliaDi">
+        <p><h1><a href="#About">Julia Di</a></h1></p>
+        <p id="subtext"> Artist | Engineer </p>
+        <p><a href="resume.pdf">Resume</a> | <a href="CV.pdf">CV</a></p>
 
-      <header>
+        <!-- Navigation -->
+        <p><a href="#Portfolio">Portfolio</a> | <a href="#Art">Art</a></p>
 
-        <h1><a href="https://julia-di.com">Julia Di</a></h1>
-        <p>Engineering Student at Columbia University</p>
+        <!-- Icons -->
+        <div class="icon-container">
+            <a class="icons" href="mailto:julia.di@columbia.edu" target="_blank"><i class="fa fa-envelope fa fa-2x"></i></a>
+            
+            <a class="icons" href="https://github.com/JuliaDi" target="_blank"><i class="fa fa-github fa fa-2x"></i></a>
 
-        <!--Various portfolio links-->
-        <p class="view"><a href="https://github.com/JuliaDi">GitHub</a></p>
-        <p class="view"><a href="https://linkedin.com/in/juliadi">LinkedIn</a></p>
-        <p class="view"><a href="resume.pdf">Download my resume!</a></p>
-        <p class="view"><a href="CV.doc">Download my CV!</a></p>
-        <p class="view"><a href="mailto:jd3171@columbia.edu">Send an email!</a></p>
-        <p class="view"><a href="projects.html">My Projects</a></p>
-      </header>
+            <a class="icons" href="https://linkedin.com/in/juliadi" target="_blank"><i class="fa fa-linkedin fa fa-2x"></i></a>
+
+            <a class="icons" href="https://instagram.com/di.julia8" target="_blank"><i class="fa fa-instagram fa fa-2x"></i></a>
+            
+        </div>
+    </header>
+
+
+<!-- Who am I? Jean Valjean! -->
+    <section>
+        <div id="About">
+        <h2>About Me</h2>
+        <hr>
+
+        <p> I grew up in Maryland about an hour away from D.C. Fun fact — I lived next to a horse farm and I'm allergic to horses. I mostly spent my K-12 years honing my art and writing skills. I also learned to play a traditional Chinese instrument, the guzheng.</p>
+
+        <p> Education-wise, I graduated with my <a href="http://www.montgomeryschoolsmd.org/schools/rmhs/ib/">IB Diploma</a> in June 2014, and will graduate from <a href="http://www.columbia.edu/">Columbia University</a> with a B.S. in Electrical Engineering and minor in Computer Science in May 2018. I also happen to like space a lot. </p>
+        </div>
+    </section>
+
+<!--Portfolio-->
+    <section>
+        <div id="Portfolio" class="container">
+        <h2>Portfolio</h2>
+        <hr>
+        <div class="row">
+
+            <!--Lockheed-->
+            <div class="col-xs-3">
+                <div data-toggle="modal" data-target="#model12" class="project" style="background-image:url(assets/images/lockheed.jpg)">
+                    <a href="https://www.lockheedmartin.com/us/ssc.html" class="thumbnail">
+                        <div class="project-title">
+                            Realtime Onboard Processing
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-xs-3">
+                <div data-toggle="modal" data-target="#modal11" class="project" style="background-image:url(assets/images/spyndra.jpg)">
+                    <a href="http://www.creativemachineslab.com/spyndra.html" class="thumbnail">
+                        <div class="project-title">
+                            Open-Source Machine-Learning Platform
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-xs-3">
+                <div data-toggle="modal" data-target="#modal11" class="project" style="background-image:url(assets/images/hamradio.jpg)">
+                    <a href="http://www.creativemachineslab.com/spyndra.html" class="thumbnail">
+                        <div class="project-title">
+                            Ham Radio
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            </div><!--/row-->
+            <div class="row">
+
+            <div class="col-lg-3">
+                <div data-toggle="modal" data-target="#modal11" class="project" style="background-image:url(assets/images/eduardo.jpg)">
+                    <a href="https://www.columbiaspace.org" class="thumbnail">
+                        <div class="project-title">
+                            Universal Capture Robot Arm (NASA)
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div data-toggle="modal" data-target="#modal11" class="project" style="background-image:url(assets/images/microg.jpg)">
+                    <a href="https://columbiaspace.org/missions/mission-microg/" class="thumbnail">
+                        <div class="project-title">
+                            NASA Asteroid Anchor Prototype
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div data-toggle="modal" data-target="#modal11" class="project" style="background-image:url(assets/images/hab.jpg)">
+                    <a href="https://columbiaspace.org/missions/mission-balloons/" class="thumbnail">
+                        <div class="project-title">
+                            High-Altitude Balloons
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            </div><!--/row-->
+            <div class="row">
+
+            <div class="col-lg-3">
+                <div data-toggle="modal" data-target="#modal11" class="project" style="background-image:url(assets/images/stratasys.jpg)">
+                    <a href="https://make.columbia.edu/" class="thumbnail">
+                        <div class="project-title">
+                            Columbia MakerSpace
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div data-toggle="modal" data-target="#modal11" class="project" style="background-image:url(assets/images/alginate.jpg)">
+                    <a href="https://synaptic.bio/organizations/sialab" class="thumbnail">
+                        <div class="project-title">
+                            Alginate Molding Device
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div data-toggle="modal" data-target="#modal11" class="project" style="background-image:url(assets/images/wiringharness.jpg)">
+                    <a href="https://columbiafsae.com"ass="thumbnail">
+                        <div class="project-title">
+                            Formula SAE Electronics
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            </div> <!--/row-->
+            <div class="row"> 
+
+            <div class="col-lg-3">
+                <div data-toggle="modal" data-target="#modal11" class="project" style="background-image:url(assets/images/sputterer.jpg)">
+                    <a href="http://kymissis.columbia.edu/" class="thumbnail">
+                        <div class="project-title">
+                            Ion Sputterer
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div data-toggle="modal" data-target="#modal11" class="project" style="background-image:url(assets/images/carbonfiber.png)">
+                    <a href="https://columbiafsae.com" class="thumbnail">
+                        <div class="project-title">
+                            Formula SAE Mold and Carbon Fiber Fab
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div data-toggle="modal" data-target="#modal11" class="project" style="background-image:url(assets/images/robotics.jpg)">
+                    <a href="http://rmrobotics.com/" class="thumbnail">
+                        <div class="project-title">
+                            FTC Robotics (2nd in World)
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            </div><!--/row-->
+        </div><!--/container-->
+
+        <p>The list goes on and on...</p>
+
+        <p>There's much, much, more that I haven't documented well!
+        Like my work at <a href="http://carleton.columbia.edu/">Carleton Laboratory</a>, or my leadership in <a href="http://cuwics.github.io/">Columbia University Women in Computer Science</a>, or my role in <a href="http://www.columbia.edu/cu/ieee/">Columbia IEEE</a> (we organize a hackathon!). This is exactly why one needs to take photos of these things! Maybe another time I'll dredge up some old photos to document my work, but in the meanwhile, just contact me if you want to know more.</p> 
+
+<!-- Art -->
+    <section>
+        <div id="Art" class="container">
+        <h2>Art</h2>
+        <hr>
+
+        <p> I've won national art and writing competitions, and have been published twice before. </p>
+
+        <p> For pictures of my work, I recommend checking out my Instagram! I post my photos, current artwork, and sculptures/maker stuff there!</p>
+        
+        <p> As per usual trend, I didn't document all my work too well. Going back to high school, I'm also rather fond of my work on my <a href="http://www.thermtide.com/">high school newspaper</a> where I was Editor-in-Chief, or my leadership in the <a href="http://richardmontgomerydrama.weebly.com/">RM Black Maskers Drama Club</a> where I was stage manager, publicity director, and a set designer/constructor. Unfortunately, I no longer have photos of my designs, but just contact me if you want to know more!</p>
+    </section>
       
-    </div>
+
+    </div> <!--/wrapper-->
     <script src="javascripts/scale.fix.js"></script>
-    
-  </body>
+
+    <footer>
+        <p id="copyright">&copy; Julia Di</p>
+    </footer>
+
+</div>
+</body>
 </html>
