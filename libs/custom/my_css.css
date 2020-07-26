@@ -174,7 +174,7 @@ h4 {
   margin-bottom: 0;}
 .footer {
   text-align: center;
-  color: rgba(255, 255, 255, 0.4);
+  color: #636466;
   border-top: 1px solid #eee;
   padding: 15px 0 40px 0;
   margin-bottom: 0;}
@@ -358,12 +358,13 @@ h4 {
 }
 
 body.light,
+footer.light-mode,
 body.light-mode button,
 body.light-mode .go-home,
 button.light-mode,
 button.light-mode button {
   background-color: #fff;
-  font-color: #777;
+  font-color: #222;
 }
 
 .light-mode-toggler {
@@ -412,7 +413,6 @@ button.light-mode button {
   border: 2px solid #fff;
   transition: all 0.4s ease-in;
 }
-
 
 .light,
 .light-mode,

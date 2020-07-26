@@ -1,6 +1,11 @@
 name: "Julia Di"
 title: "Artist & Engineer"
-position: "Robotics PhD Student <br/> Stanford University"
+position: "Stanford PhD Student"
+
+# last updated date
+date: "July 26, 2020"
+
+# links
 email: "mailto: juliadi@stanford.edu"
 profile_pic: "/assets/images/profile.png"
 twitter: "https://twitter.com/astroboticist"
@@ -10,4 +15,6 @@ linkedin: "https://www.linkedin.com/in/JuliaDi"
 github: "https://github.com/JuliaDi"
 CV: "/assets/cv/CV.pdf"
 google_scholar: "https://scholar.google.com/citations?hl=en&user=v4SvcqsAAAAJ"
+
+# For site tracking
 google_analystics_tracking_id: 'UA-173589951-1'

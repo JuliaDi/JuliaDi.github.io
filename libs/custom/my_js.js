@@ -32,10 +32,12 @@ $(document).ready(function() {
     if( !$( "body" ).hasClass( "light-mode" )) {
       $( "body" ).addClass( "light-mode" );
       $( "nav" ).addClass( "light-mode" );
+      $( "footer" ).addClass( "light-mode" );
       $( ".light-mode-toggler" ).text( "OFF" );
     } else {
       $( "body" ).removeClass( "light-mode" );
       $( "nav" ).removeClass( "light-mode" );
+      $( "footer" ).removeClass( "light-mode" );
       $( ".light-mode-toggler" ).text( "ON" );
     }
   });
