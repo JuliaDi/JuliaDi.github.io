@@ -49,6 +49,16 @@ projects:
     art: n
     hardware: y
     software: y
+    
+  - title: "DivHacks 2018"
+    subtitle: "Columbia's first and only student-run hackathon for under-represented students"
+    thumbnail: "assets/projects/2018_divhacks/thumbnail.jpg"
+    url: "projects/2018_divhacks.html"
+    selected: y
+    social: y
+    art: n
+    hardware: n
+    software: n
 
   - title: "3D-printing"
     subtitle: "A collection of 3D-printed art"
