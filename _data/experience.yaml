@@ -18,10 +18,16 @@ experiences:
   subtitle: "Turned down my dream lab <br/> to attend Stanford for personal reasons"
   category: "school"
 
+- place: "Southeast Asia"
+  time: "January 2018"
+  title: "Backpacked through southeast Asia"
+  subtitle: "Was so much fun to do this <br/> before everyone scattered after college"
+  category: "work"
+
 - place: "Mountain View, CA"
   time: "Summer 2017"
-  title: "First Love"
-  subtitle: "Met my first love from college"
+  title: "Decided on pursuing grad school"
+  subtitle: "Also a pivotal summer where <br/> I met my first love from college"
   category: "work"
 
 - place: "Columbia University"

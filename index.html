@@ -137,7 +137,10 @@ title: Personal Webpage
 
   <ul class="tab-nav">
     <li><div class="button active" data-ref="#projects-selected">Selected</div></li>
-    <li><div class="button" data-ref="#projects-selected">Art</div></li>
+    <li><div class="button" data-ref="#projects-social">Social Good</div></li>
+    <li><div class="button" data-ref="#projects-art">Art</div></li>
+    <li><div class="button" data-ref="#projects-hardware">Hardware</div></li>
+    <li><div class="button" data-ref="#projects-software">Software</div></li>
     <li><div class="button" data-ref="#projects-all">All</div></li>
   </ul>
 
@@ -172,7 +175,39 @@ title: Personal Webpage
         {% endif %}
       {% endfor %}
     </div>
+  </div>
 
+    <div class="tab-pane" id="projects-social">
+      {% assign social_projects = site.data.projects.projects | where: "social", "y" %}
+      {% for project in social_projects %}
+        {% assign index_modulo = forloop.index0 | modulo:3 %}
+        {% if index_modulo == 0 %}
+          <div class="row">
+        {% endif %}
+
+          <div class="four columns">
+            <div class="project-container">
+
+                <div class="project-image-container">
+                  <a href="{{ project.url }}">
+                    <img src="{{ project.thumbnail }}" class="u-max-full-width" />
+                  </a>
+                </div>
+
+                <div class="project-caption">
+                  <b>{{ project.title }}</b> <br/>
+                  {{ project.subtitle }}
+                </div>
+
+            </div>
+          </div>
+
+        {% if index_modulo == 2 %}
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  
     <div class="tab-pane" id="projects-art">
       {% assign art_projects = site.data.projects.projects | where: "art", "y" %}
       {% for project in art_projects %}
@@ -203,7 +238,69 @@ title: Personal Webpage
         {% endif %}
       {% endfor %}
     </div>
+  </div>
+    <div class="tab-pane" id="projects-hardware">
+      {% assign hw_projects = site.data.projects.projects | where: "hardware", "y" %}
+      {% for project in hw_projects %}
+        {% assign index_modulo = forloop.index0 | modulo:3 %}
+        {% if index_modulo == 0 %}
+          <div class="row">
+        {% endif %}
 
+          <div class="four columns">
+            <div class="project-container">
+
+                <div class="project-image-container">
+                  <a href="{{ project.url }}">
+                    <img src="{{ project.thumbnail }}" class="u-max-full-width" />
+                  </a>
+                </div>
+
+                <div class="project-caption">
+                  <b>{{ project.title }}</b> <br/>
+                  {{ project.subtitle }}
+                </div>
+
+            </div>
+          </div>
+
+        {% if index_modulo == 2 %}
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+    <div class="tab-pane" id="projects-software">
+      {% assign sw_projects = site.data.projects.projects | where: "software", "y" %}
+      {% for project in sw_projects %}
+        {% assign index_modulo = forloop.index0 | modulo:3 %}
+        {% if index_modulo == 0 %}
+          <div class="row">
+        {% endif %}
+
+          <div class="four columns">
+            <div class="project-container">
+
+                <div class="project-image-container">
+                  <a href="{{ project.url }}">
+                    <img src="{{ project.thumbnail }}" class="u-max-full-width" />
+                  </a>
+                </div>
+
+                <div class="project-caption">
+                  <b>{{ project.title }}</b> <br/>
+                  {{ project.subtitle }}
+                </div>
+
+            </div>
+          </div>
+
+        {% if index_modulo == 2 %}
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
     <div class="tab-pane" id="projects-all">
       {% for project in site.data.projects.projects %}
         {% assign index_modulo = forloop.index0 | modulo:3 %}
@@ -268,7 +365,7 @@ title: Personal Webpage
     <h4>Site Acknowledgements</h4>
     <p>
     Adapted with permission using Martin Saveski's website template, available at
-    this <a href="https://github.com/msaveski/www_personal" target="_blank">GitHub repo</a>, and with help from <a href="http://svmiller.com/blog/2015/08/create-your-website-in-jekyll/" target="_blank">Steven V. Miller's blog</a>. The light mode toggler was inspired by <a href="https://cassidoo.co">Cassidy Williams</a>' website, with core implementation from <a href="https://www.developerdrive.com/css-dark-mode/">developerdrive.com</a>.for the light mode toggler. 
+    this <a href="https://github.com/msaveski/www_personal" target="_blank">GitHub repo</a>, and with help from <a href="http://svmiller.com/blog/2015/08/create-your-website-in-jekyll/" target="_blank">Steven V. Miller's blog</a>. The light mode toggler was inspired by <a href="https://cassidoo.co">Cassidy Williams</a>' website, with core implementation from <a href="https://www.developerdrive.com/css-dark-mode/">developerdrive.com</a>. 
 	</p>
     <p>    All opinions on this site are my own and do not reflect my employer. </p>
 </div>

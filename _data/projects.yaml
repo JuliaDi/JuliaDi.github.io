@@ -1,8 +1,93 @@
 projects:
 
+  - title: "Women of Aeronautics and Astronautics (non-profit)"
+    subtitle: "A movement for marginalized genders in aerospace"
+    thumbnail: "assets/projects/2019_woaa/thumbnail.JPG"
+    url: "projects/2019_woaa.html"
+    selected: y
+    social: y
+    art: n
+    hardware: n
+    software: n
+
+  - title: "Windchest"
+    subtitle: "An interactive light and sound architectural landscape installation"
+    thumbnail: "assets/projects/2019_burn/windchest.JPG"
+    url: "projects/2019_burn.html"
+    selected: y
+    social: n
+    art: y
+    hardware: n
+    software: n
+
+  - title: "Stained Glass"
+    subtitle: "A novice learns stained glass"
+    thumbnail: "assets/projects/2019_burn/glass.jpg"
+    url: "projects/2019_burn.html"
+    selected: n
+    social: n
+    art: y
+    hardware: n
+    software: n
+
+  - title: "Generating Art"
+    subtitle: "Using generative adversarial networks to make art"
+    thumbnail: "assets/projects/2019_artgans/thumbnail.png"
+    url: "projects/2019_artgans.html"
+    selected: n
+    social: n
+    art: y
+    hardware: n
+    software: y
+
   - title: "Spyndra 1.0"
-    subtitle: An Open-Source Proprioceptive Robot for Studies in Machine Self-Awareness"
+    subtitle: "An Open-Source Proprioceptive Robot for Studies in Machine Self-Awareness"
     thumbnail: "assets/projects/2018_spyndra/thumbnail.jpg"
     url: "projects/2018_spyndra.html"
     selected: y
+    social: n
     art: n
+    hardware: y
+    software: y
+
+  - title: "3D-printing"
+    subtitle: "A collection of 3D-printed art"
+    thumbnail: "assets/projects/2018_stratasys/thumbnail.jpg"
+    url: "projects/2018_stratasys.html"
+    selected: n
+    social: n
+    art: y
+    hardware: n
+    software: n
+
+  - title: "Columbia Space Initiative Projects"
+    subtitle: "Started an organization that sends things to space and teaches others"
+    thumbnail: "assets/projects/2016_csi/hab.jpg"
+    url: "projects/2016_csi.html"
+    selected: y
+    social: y
+    art: n
+    hardware: y
+    software: n
+
+  - title: "Alginate Mold"
+    subtitle: "For patients with critical limb ischemia"
+    thumbnail: "assets/projects/2016_alginate/thumbnail.jpg"
+    url: "projects/2016_alginate.html"
+    selected: n
+    social: y
+    art: n
+    hardware: y
+    software: n
+
+  - title: "Formula SAE"
+    subtitle: "I was Vice President and an Electrical Engineer on this racecar"
+    thumbnail: "assets/projects/2015_fsae/thumbnail.jpg"
+    url: "projects/2015_fsae.html"
+    selected: n
+    social: n
+    art: n
+    hardware: y
+    software: n
+
+

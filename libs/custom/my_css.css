@@ -247,6 +247,9 @@ h4 {
     text-decoration: none;
     line-height: 6.5rem;
     color: #777; }
+  .navbar-img {
+    line-height: 8.5rem;
+    margin-right: 15px; }
   .navbar-link.active {
     color: #33C3F0; }
   /* float navbar container to right so button order is maintained */

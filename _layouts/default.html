@@ -51,8 +51,13 @@
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/ico" href={{ "/assets/favicon/favicon.ico" | prepend: site.baseurl }}>
-  <link rel="shortcut icon" type="image/ico" href={{ "/assets/favicon/favicon.ico" | prepend: site.baseurl }}>
+  <link rel="apple-touch-icon" sizes="180x180" href={{ "assets/favicon/apple-touch-icon.png" | prepend: site.baseurl }}>
+  <link rel="icon" type="image/png" sizes="32x32" href={{ "assets/favicon/favicon-32x32.png" | prepend: site.baseurl }}">
+  <link rel="icon" type="image/png" sizes="16x16" href={{ "assets/favicon/favicon-16x16.png" | prepend: site.baseurl }}>
+  <link rel="manifest" href="/site.webmanifest">
+
+
+
 
 </head>
 <body>
@@ -123,6 +128,8 @@
           <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#projects" | prepend: site.baseurl }}>Projects</a></li>
           <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#milestones" | prepend: site.baseurl }}>Milestones</a></li>
           <li class="navbar-item"><a class="navbar-link" href={{ "/blog.html" | prepend: site.baseurl }}>Blog</a></li>
+          <li class="navbar-item"><a class="navbar-link" href={{ "/blog.html" | prepend: site.baseurl }}>  </a></li>
+          <li class="navbar-item"><a class="navbar-img" href="{{ site.baseurl }}/"><img src={{ "assets/favicon/favicon-32x32.png" | prepend: site.baseurl }}></a></li>
         </ul>
       </div>
     </nav>
