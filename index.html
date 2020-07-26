@@ -18,7 +18,9 @@ title: Personal Webpage
   </p>
 
   <p>
-  Prior to coming to Stanford, I grew up in small-town Maryland about an hour away from D.C. Fun fact — I lived next to a horse farm and I'm allergic to horses. I mostly spent my K-12 years honing my art and writing skills. I also learned to play a traditional Chinese instrument, the guzheng. In my internships I have worked on NASA robots, an X-plane, and satellites; I've also hiked a sulphur volcano and jumped out of a plane. I have been lucky enough to receive the 2020 Interact Fellowship, 2019 Threshold Ventures Fellowship, NSF Graduate Fellowhsip <i>(declined)</i>, 2018 Brooke Owens Fellowship, and 2017 AIAA 20 Twenties Laureate. I received my B.S. in Electrical Engineering from Columbia University in 2018, where I started the <a href="http://www.columbiaspace.org">Columbia Space Initiative</a> and was very active on campus as a student leader.
+  Prior to coming to Stanford, I grew up in small-town Maryland about an hour away from D.C. Fun fact — I lived next to a horse farm and I'm allergic to horses. I mostly spent my K-12 years honing my art and writing skills. I also learned to play a traditional Chinese instrument, the guzheng. 
+  </p>
+  <p>In my internships I have worked on NASA robots, an X-plane, and satellites; I've also hiked a sulphur volcano and jumped out of a plane. I have been lucky enough to receive the 2020 Interact Fellowship, 2019 Threshold Ventures Fellowship, NSF Graduate Fellowhsip <i>(declined)</i>, 2018 Brooke Owens Fellowship, and 2017 AIAA 20 Twenties Laureate. I received my B.S. in Electrical Engineering from Columbia University in 2018, where I started the <a href="http://www.columbiaspace.org">Columbia Space Initiative</a> and was very active on campus as a student leader.
   </p>
 </div>
 
@@ -29,13 +31,20 @@ title: Personal Webpage
   <p> The latest news! </p>
 
   <ul>
-    <li><strong>12 July 2020</strong>: Happy to have presented my retrospective on tactile sensing at the <a href="https://sites.google.com/stanford.edu/roboticsretrospectives/home">RSS 2020 - Workshop on Robotic Retrospectives </a></li>
+    {% assign selected_news = site.data.news.news | where: "selected", "y" %}
+    {% for news in selected_news %}
+      <li><strong>{{ news.date }}</strong> | <a href="{{ news.link }}">Link here</a>: {{ news.description }}</li>
+    {% endfor %}
+
   </ul>
 
 <details>
 <summary><h5> >> Past </h5></summary>   
 <ul>
-<li>31 May 2019: Stanford University</li>
+  {% assign past_news = site.data.news.news | where: "selected", "n" %}
+  {% for news in past_news %}
+  <li><strong>{{ news.date }}</strong> | <a href="{{ news.link }}">Link here</a>: {{ news.description }}</li>
+  {% endfor %}
 </ul>
 </details>
 

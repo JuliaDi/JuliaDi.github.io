@@ -255,10 +255,13 @@ h4 {
    }
   .has-docked-nav .navbar {
     position: fixed;
-    top: 0; 
-    left: 0px; }
+    top: 0;
+    max-width: 800px;}
   .has-docked-nav .navbar-spacer {
     display: block; }
+  .has-docked-nav .navbar-rightcontainer{
+    float: center;
+  }
   /* Re-overiding the width 100% declaration to match size of % based container */
   .has-docked-nav .navbar > .container {
     width: 80%; }
@@ -357,7 +360,7 @@ body.light-mode .go-home,
 button.light-mode,
 button.light-mode button {
   background-color: #fff;
-  font-color: #222;
+  font-color: #777;
 }
 
 .light-mode-toggler {

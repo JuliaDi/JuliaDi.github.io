@@ -26,14 +26,16 @@ $(document).ready(function() {
     buildSnippets();
   }
   
-   /* Light Mode */
+   /* Adding Light Mode */
 
   $( ".light-mode-toggler" ).on("click", function() {
     if( !$( "body" ).hasClass( "light-mode" )) {
       $( "body" ).addClass( "light-mode" );
+      $( "nav" ).addClass( "light-mode" );
       $( ".light-mode-toggler" ).text( "OFF" );
     } else {
       $( "body" ).removeClass( "light-mode" );
+      $( "nav" ).removeClass( "light-mode" );
       $( ".light-mode-toggler" ).text( "ON" );
     }
   });

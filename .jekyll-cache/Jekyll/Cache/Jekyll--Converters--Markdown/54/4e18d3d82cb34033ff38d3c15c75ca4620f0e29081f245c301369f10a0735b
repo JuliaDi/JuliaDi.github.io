@@ -1,0 +1,23 @@
+I"$	<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<p><strong>Abstract.</strong>
+Spyndra is our newest open-source quadruped robot platform. It has eight motors, an IMU, and runs Raspberry-PI 3. It requires non-intuitive motor commands in order to locomote, and thus provides an interesting challenge for gait learning algorithms, such as those frequently developed in the Evolutionary Computation and Artificial Life communities.
+<br />
+This open-source robot is composed of off-the-shelf motors and 3D-printed parts, enabling anyone to construct this robot for roughly $600 in parts plus printing material. We hope other hobbyists and other research teams will modify its design according to their scientific needs.
+<br /> 
+Further description of the work can be found on the <a href="https://www.creativemachineslab.com/spyndra.html">project website</a>, and in this <a href="/~juliadi/assets/publications/2018_spyndra/paper.pdf">pre-print</a>.</p>
+
+<p><strong>Illustration of Spyndra</strong> <br /></p>
+<figure class="image">
+  <img src="/~juliadi/assets/projects/2018_spyndra/main.jpg" alt="" style="width: 50%" />
+  <figcaption><b></b></figcaption>
+</figure>
+<p><strong>(A)</strong> Graph of all units and the connections between them; the dashed circles represent (equally-sized) clusters. <br />
+<strong>(B)</strong> Assigning clusters to treatment arms: completely randomized (CR) and cluster-based randomized assignment (CBR). <br />
+<strong>(C)</strong> Assigning units to treatment buckets—treatment and control—using the corresponding strategy. <br />
+<strong>(D)</strong> Computing the treatment effect within each treatment arm: \(\hat \mu_{cr}\) and \(\hat \mu_{cbr}\), and variance: \(\hat \sigma^2_{cr}\) and \(\hat \sigma^2_{cbr}\). <br />
+<strong>(E)</strong> Computing the difference of the estimates from each treatment arm: \(\Delta = \hat \mu_{cr} - \hat \mu_{cbr}\), and the total variance: \(\hat \sigma^2 = \hat \sigma^2_{cr} + \hat \sigma^2_{cbr}\). <br /></p>
+
+<p><strong>Short video of Spyndra walking.</strong> <br /></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/i_a6hoQ2w08" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+:ET

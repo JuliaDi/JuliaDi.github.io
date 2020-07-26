@@ -1,0 +1,16 @@
+news:
+
+  - date: "15 July 2020"
+    link: "https://www.discoverphds.com/advice/interviews/julia-di"
+    description: "Interviewed for DiscoverPhDs!"
+    selected: y
+
+  - date: "12 July 2020"
+    link: "https://sites.google.com/stanford.edu/roboticsretrospectives/home"
+    description: "Happy to have presented my retrospective on tactile sensing at RSS 2020 Workshop" 
+    selected: y
+
+  - date: "29 July 2019"
+    link: "https://www.geekyreality.com/blog/stemstories-julia-space-roboticist-usa/"
+    description: "Interviewed as a #STEMStory for Geeky Girl Reality!"
+    selected: n

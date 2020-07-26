@@ -1,8 +1,8 @@
 projects:
 
   - title: "Spyndra 1.0"
-    subtitle: :An Open-Source Proprioceptive Robot for Studies in Machine Self-Awareness"
+    subtitle: An Open-Source Proprioceptive Robot for Studies in Machine Self-Awareness"
     thumbnail: "assets/projects/2018_spyndra/thumbnail.jpg"
     url: "projects/2018_spyndra.html"
-    selected: n
+    selected: y
     art: n
