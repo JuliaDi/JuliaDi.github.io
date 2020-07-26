@@ -1,0 +1,35 @@
+---
+layout: default
+title: Blog
+---
+
+<!-- ============ Blog Tags ========= -->
+<!-- <div class="docs-section" id="blog"> -->
+
+  <h4>Writing</h4>
+
+  <p>
+  I'm writing here! They're sorted by tags and by general archive.
+  </p>
+
+  By tags:
+ {% for tag in site.tags %}
+  <h5>{{ tag[0] }}</h5>
+  <ul>
+    {% for post in tag[1] %}
+      <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      <p>{{ post.excerpt }}</p>
+  	  </li>
+    {% endfor %}
+  </ul>
+{% endfor %}
+
+Chronological Archive:
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <h5><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h5>
+      <p>{{ post.excerpt }}</p>
+    </li>
+  {% endfor %}
+</ul>

@@ -1,8 +1,12 @@
 source:      .
 destination: ./_site
 includes:    ./_includes
-baseurl: /~msaveski
+baseurl: /~juliadi
 
 collections:
   projects:
     output: true
+    
+# Other options
+#permalink: blog/:year/:month/:title
+excerpt_separator: <!--more-->

@@ -6,8 +6,8 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
   <title>{{ site.data.main_info.name }} | {{ page.title }}</title>
-  <meta name="description" content="Homepage of Martin Saveski">
-  <meta name="author" content="Martin Saveski">
+  <meta name="description" content="Homepage of Julia Di">
+  <meta name="author" content="Julia Di">
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -15,7 +15,7 @@
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700' rel='stylesheet' type='text/css'>
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -51,11 +51,18 @@
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href={{ "/libs/icon.png" | prepend: site.baseurl }}>
-  <link rel="shortcut icon" type="image/png" href={{ "/libs/icon.png" | prepend: site.baseurl }}>
+  <link rel="icon" type="image/ico" href={{ "/assets/favicon/favicon.ico" | prepend: site.baseurl }}>
+  <link rel="shortcut icon" type="image/ico" href={{ "/assets/favicon/favicon.ico" | prepend: site.baseurl }}>
 
 </head>
 <body>
+
+	<!-- light Mode Toggle -->
+
+  <div class="light-mode-toggler"> Light Mode:
+    <input type="checkbox" id="toggler" />
+    <label for="toggler" aria-label="Toggler for light Mode"></label>
+  </div>
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -63,22 +70,30 @@
 
     <section class="header">
       <div class="row">
-        <div class="three columns">
-          <a href="{{ site.baseurl }}/"><img class="u-max-full-width" src='{{ site.baseurl }}{{ site.data.main_info.profile_pic }}'></a>
-        </div>
         <div class="nine columns main-description">
             <h1>{{ site.data.main_info.name }}</h1>
             <p>{{ site.data.main_info.title }}</p>
-            <p>{{ site.data.main_info.email }}</p>
             <p>
+              <span onclick="window.open('{{ site.data.main_info.instagram-art }}')" style="cursor: pointer">
+                <i class="fa fa-paint-brush fa-lg" aria-hidden="true"></i>
+              </span>
+
               <span onclick="window.open('{{ site.data.main_info.twitter }}')" style="cursor: pointer">
-                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
               </span>
 
+              <span onclick="window.open('{{ site.data.main_info.instagram }}')" style="cursor: pointer">
+                <i class="fa fa-instagram fa fa-lg" aria-hidden="true"></i>
+              </span>
               <span onclick="window.open('{{ site.data.main_info.linkedin }}')" style="cursor: pointer">
-                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                <i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i>
               </span>
-
+              
+            </p>
+            <p>
+              <span onclick="window.open('{{ site.data.main_info.email }}')" style="cursor: pointer">
+                <i class="fa fa-envelope fa" aria-hidden="true"></i>
+              </span>
               <span onclick="window.open('{{ site.data.main_info.github }}')" style="cursor: pointer">
                 <i class="fa fa-github" aria-hidden="true"></i>
               </span>
@@ -86,19 +101,28 @@
               <span onclick="window.open('{{ site.data.main_info.google_scholar }}')" style="cursor: pointer">
                 <i class="ai ai-google-scholar ai-lg" aria-hidden="true"></i>
               </span>
+
+              <span onclick="window.open('{{ site.data.main_info.CV | prepend: site.baseurl }}')" style="cursor: pointer">
+                <i class="ai ai-cv-square ai-lg" aria-hidden="true"></i>
+              </span>
             </p>
+        </div>
+        <div class="three columns">
+          <a href="{{ site.baseurl }}/"><img class="circular--portrait" src='{{ site.baseurl }}{{ site.data.main_info.profile_pic }}'></a>
         </div>
       </div>
     </section>
 
     <div class="navbar-spacer"></div>
     <nav class="navbar">
-      <div class="container">
+      <div class="navbar-rightcontainer">
         <ul class="navbar-list">
           <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#bio" | prepend: site.baseurl }}>Bio</a></li>
+          <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#news" | prepend: site.baseurl }}>News</a></li>
           <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#publications" | prepend: site.baseurl }}>Publications</a></li>
           <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#projects" | prepend: site.baseurl }}>Projects</a></li>
-          <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#resume" | prepend: site.baseurl }}>Vita</a></li>
+          <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#milestones" | prepend: site.baseurl }}>Milestones</a></li>
+          <li class="navbar-item"><a class="navbar-link" href={{ "/blog.html" | prepend: site.baseurl }}>Blog</a></li>
         </ul>
       </div>
     </nav>
@@ -108,24 +132,25 @@
     <div class="footer">
       <div class="row">
         <div class="four columns">
-          {{ site.data.main_info.name }}
+          {{ site.data.main_info.name }} <br/>
+          {{ site.data.main_info.title }}
         </div>
         <div class="four columns">
-          {{ site.data.main_info.email }}
+          {{ site.data.main_info.position }}
         </div>
         <div class="four columns">
           <span onclick="window.open('{{ site.data.main_info.twitter }}')" style="cursor: pointer">
-            <i class="fa fa-twitter" aria-hidden="true"></i>
-          </span>
+            <i class="fa fa-twitter" aria-hidden="true"></i> Twitter
+          </span> <br/> 
+          <span onclick="window.open('{{ site.data.main_info.instagram }}')" style="cursor: pointer">
+                <i class="fa fa-instagram" aria-hidden="true"></i> Instagram
+              </span> <br/>
           <span onclick="window.open('{{ site.data.main_info.linkedin }}')" style="cursor: pointer">
-            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-          </span>
-          <span onclick="window.open('{{ site.data.main_info.github }}')" style="cursor: pointer">
-            <i class="fa fa-github" aria-hidden="true"></i>
-          </span>
-          <span onclick="window.open('{{ site.data.main_info.google_scholar }}')" style="cursor: pointer">
-            <i class="ai ai-google-scholar ai-lg" aria-hidden="true"></i>
-          </span>
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i> LinkedIn
+          </span> <br/>
+          <span onclick="window.open('{{ site.data.main_info.email }}')" style="cursor: pointer">
+                <i class="fa fa-envelope" aria-hidden="true"></i> Email
+          </span> <br/>
         </div>
       </div>
     </div>
