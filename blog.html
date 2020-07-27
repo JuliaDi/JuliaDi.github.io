@@ -19,6 +19,7 @@ title: Blog
     {% for post in tag[1] %}
       <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
       <p>{{ post.excerpt }}</p>
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
   	  </li>
     {% endfor %}
   </ul>
@@ -30,6 +31,7 @@ Chronological Archive:
     <li>
       <h5><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h5>
       <p>{{ post.excerpt }}</p>
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </li>
   {% endfor %}
 </ul>
