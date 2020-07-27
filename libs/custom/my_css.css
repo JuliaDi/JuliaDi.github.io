@@ -113,7 +113,7 @@ img {
 
 .circular--portrait {
   height: auto;
-  width: 200%;
+  width: 200px;
   margin-top: -25px;
   margin-bottom: -5px;
   -webkit-border-radius: 100%; 
@@ -134,15 +134,15 @@ h4 {
   margin-bottom: 60px; 
   text-align: right; } 
 .main-description p {
-  margin-bottom: 0px; }
+  margin-bottom: -5px; }
 .main-description .fa {
-  font-size: 30px;
-  margin-top: 0px;
+  font-size: 20px;
+  margin-top: 5px;
   color:#39c; }
 /* academic icons */  
 .main-description .ai {
-  font-size: 30px;
-  margin-top: 0px;
+  font-size: 20px;
+  margin-top: 5px;
   color:#39c; }    
   
   
@@ -370,7 +370,7 @@ button.light-mode button {
 .light-mode-toggler {
   position: fixed;
   top: 5px;
-  right: 20px;
+  right: 25px;
 }
 .light-mode-toggler label {
   position: relative;
