@@ -220,7 +220,6 @@
   .direction-r {
     float: none;
     width: 100%;
-
     text-align: center;
   }
 
@@ -229,7 +228,7 @@
   }
 
   .flag {
-    background: rgb(255,255,255);
+    background: rgb(51,153,204);
     z-index: 15;
   }
 
@@ -245,7 +244,7 @@
     margin-left: -9px;
     background: #fff;
     border-radius: 10px;
-    border: 4px solid rgb(255,80,80);
+    border: 4px solid rgb(51,153,204);
     z-index: 10;
   }
 
@@ -259,7 +258,7 @@
     width: 0;
     margin-left: -8px;
     border: solid transparent;
-    border-bottom-color: rgb(255,255,255);
+    border-bottom-color: rgb(51,153,204);
     border-width: 8px;
     pointer-events: none;
   }
@@ -283,11 +282,9 @@
     position: relative;
     margin: 1em 0 0 0;
     padding: 1em;
-    background: rgb(245,245,245);
     -webkit-box-shadow: 0 0 1px rgba(0,0,0,0.20);
     -moz-box-shadow: 0 0 1px rgba(0,0,0,0.20);
     box-shadow: 0 0 1px rgba(0,0,0,0.20);
-    
     z-index: 15;
   }
 
