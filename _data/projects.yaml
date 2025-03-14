@@ -3,7 +3,7 @@ projects:
   - title: "Women of Aeronautics and Astronautics (non-profit)"
     subtitle: "A movement for marginalized genders in aerospace"
     thumbnail: "assets/projects/2019_woaa/thumbnail.JPG"
-    url: "projects/2019_woaa.html"
+    url: "https://www.woaaofficial.org/"
     selected: y
     social: y
     art: n
@@ -13,7 +13,7 @@ projects:
   - title: "Windchest"
     subtitle: "An interactive light and sound architectural landscape installation"
     thumbnail: "assets/projects/2019_burn/windchest.JPG"
-    url: "projects/2019_burn.html"
+    url: "https://gallery.burningman.org/asset/a78828d5-39bf-4ae4-9e6d-77a2a01ec65c?i=35&q=the+man"
     selected: y
     social: n
     art: y
@@ -44,16 +44,16 @@ projects:
     subtitle: "An Open-Source Proprioceptive Robot for Studies in Machine Self-Awareness"
     thumbnail: "assets/projects/2018_spyndra/thumbnail.jpg"
     url: "projects/2018_spyndra.html"
-    selected: y
+    selected: n
     social: n
     art: n
-    hardware: y
-    software: y
+    hardware: n
+    software: n
     
   - title: "DivHacks 2018"
-    subtitle: "Columbia's first and only student-run hackathon for under-represented students"
+    subtitle: "Organized Columbia's first student-run hackathon for under-represented students"
     thumbnail: "assets/projects/2018_divhacks/thumbnail.jpg"
-    url: "projects/2018_divhacks.html"
+    url: "https://www.columbiadivhacks.org/"
     selected: y
     social: y
     art: n
@@ -73,11 +73,11 @@ projects:
   - title: "Columbia Space Initiative Projects"
     subtitle: "Started an organization that sends things to space and teaches others"
     thumbnail: "assets/projects/2016_csi/hab.jpg"
-    url: "projects/2016_csi.html"
+    url: "https://columbiaspace.org/"
     selected: y
     social: y
     art: n
-    hardware: y
+    hardware: n
     software: n
 
   - title: "Alginate Mold"
@@ -85,9 +85,9 @@ projects:
     thumbnail: "assets/projects/2016_alginate/thumbnail.jpg"
     url: "projects/2016_alginate.html"
     selected: n
-    social: y
+    social: n
     art: n
-    hardware: y
+    hardware: n
     software: n
 
   - title: "Formula SAE"
@@ -97,7 +97,7 @@ projects:
     selected: n
     social: n
     art: n
-    hardware: y
+    hardware: n
     software: n
 
 

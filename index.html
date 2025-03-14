@@ -8,20 +8,10 @@ title: Personal Webpage
   <h4>Bio</h4>
 
   <p>
-  <b>I'm Julia Di, an artist, writer, science communicator, and robotics student.</b>
-  </p>
-  <p>
-  I'm currently a Ph.D. student in the <a href="http://bdml.stanford.edu/">Biomimetic & Dexterous Manipulation Laboratory</a> at Stanford University, advised by Mark Cutkosky. For my Ph.D. I am improving the interaction capabilities of robots. But my goal in life is to explore the intersection of <b>art with technology</b>, and <b>social good with technology</b>.
+  I recently earned my PhD from the <a href="http://bdml.stanford.edu/">Biomimetic & Dexterous Manipulation Laboratory</a> at Stanford University, advised by Mark Cutkosky. My dissertation work was on optical sensing for visual and tactile perception to improve the physical interaction capabilities of robots. My interests in life revolve around <b>robotic sensing</b>, <b>art</b>, <b>climate change and conservation</b>, and <b>social impact</b>.
   </p>
 
-  <p>
-  You can find my <a href={{ "/assets/cv/CV.pdf" | prepend: site.baseurl }} target="_blank">full C.V. pdf here</a>, or my <a href={{ "/assets/cv/resume.pdf" | prepend: site.baseurl }} target="_blank">one-page resume pdf here.</a></p>
-  </p>
-
-  <p>
-  Prior to coming to Stanford, I grew up in small-town Maryland about an hour away from D.C. Fun fact — I lived next to a horse farm and I'm allergic to horses. I mostly spent my K-12 years honing my art and writing skills. I also learned to play a traditional Chinese instrument, the guzheng. 
-  </p>
-  <p>In the past I have worked on NASA robots, an X-plane, and satellites; I've also hiked a sulphur volcano and jumped out of a plane. I have been very grateful to receive the 2020 Interact Fellowship, 2019 Threshold Ventures Fellowship, NSF Graduate Fellowhsip <i>(declined)</i>, 2018 Brooke Owens Fellowship, and 2017 AIAA 20 Twenties Laureate. I received my B.S. in Electrical Engineering from Columbia University in 2018, where I started the <a href="http://www.columbiaspace.org">Columbia Space Initiative</a> and was very active on campus as a student leader.
+  <p>In the past I have worked on NASA robots, an X-plane, and domestic robots; I've also done a few thru-hike sections (so far El Camino de Santiago, John Muir Trail), jumped out of a plane, and earned an open water dive license. I have been very grateful to receive the 2020 Interact Fellowship, 2019 Threshold Ventures Fellowship, 2018 Brooke Owens Fellowship, and 2017 AIAA 20 Twenties Laureate. I received my B.S. in Electrical Engineering from Columbia University in 2018, where I started the <a href="http://www.columbiaspace.org">Columbia Space Initiative</a> and was very active on campus as a student organization leader.
   </p>
 </div>
 
@@ -29,18 +19,16 @@ title: Personal Webpage
 <div class="docs-section" id="news">
   <h4>News</h4>
 
-  <p> The latest news! </p>
-
   <ul>
     {% assign selected_news = site.data.news.news | where: "selected", "y" %}
     {% for news in selected_news %}
-      <li><strong>{{ news.date }}</strong> | <a href="{{ news.link }}">Link here</a>: {{ news.description }}</li>
+      <li><strong>{{ news.date }}</strong> | <a href="{{ news.link }}">Link</a> | {{ news.description }}</li>
     {% endfor %}
 
   </ul>
 
 <details>
-<summary><h5> >> Past </h5></summary>   
+<summary><h5> More </h5></summary>   
 <ul>
   {% assign past_news = site.data.news.news | where: "selected", "n" %}
   {% for news in past_news %}
@@ -57,13 +45,12 @@ title: Personal Webpage
 <div class="docs-section" id="publications">
   <h4>Publications</h4>
 
-  <p>Most recent publications on <a href="{{ site.data.main_info.google_scholar }}" target="_blank">Google Scholar</a>.<br/>
+  <p>Full list of publications on <a href="{{ site.data.main_info.google_scholar }}" target="_blank">Google Scholar</a>.<br/>
   <sup>‡</sup> indicates equal contribution.
   </p>
 
   <ul class="tab-nav">
     <li><div class="button active" data-ref="#papers-selected">Selected</div></li>
-    <li><div class="button" data-ref="#papers-all">All</div></li>
   </ul>
 
   <div class="tab-content">
@@ -98,48 +85,41 @@ title: Personal Webpage
         </div>
       {% endfor %}
     </div>
-
-    <div class="tab-pane" id="papers-all">
-      {% for paper in site.data.publications.papers %}
-        <div class="paper">
-          <p class="title"><b>{{ paper.title }}</b></p>
-          <p>{{ paper.authors }}</p>
-          <p><i>{{ paper.venue }}</i></p>
-           <div class="paper-buttons">
-            {% if paper.paper_pdf %}
-              <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">Paper</a>
-            {% endif %}
-
-            {% if paper.slides %}
-              <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
-            {% endif %}
-
-            {% if paper.poster %}
-              <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
-            {% endif %}
-
-            {% if paper.video %}
-              <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
-            {% endif %}
-
-            {% if paper.code %}
-              <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
-            {% endif %}
-          </div>
-        </div>
-      {% endfor %}
-    </div>
   </div>
+</div>
+
+<!-- ========== PERSONAL========== -->
+<div class="docs-section" id="resume">
+  <h4>Resume</h4>
+
+  <!-- The Timeline -->
+  <ul class="timeline">
+    {% for exp in site.data.experience.experiences %}
+    <li>
+      {% if exp.category == "work" %}
+      <div class="direction-l">
+      {% else %}
+      <div class="direction-r">
+      {% endif %}
+        <div class="flag-wrapper">
+          <span class="flag">{{ exp.place }}</span>
+          <span class="time-wrapper"><span class="time">{{ exp.time }}</span></span>
+        </div>
+        <div class="desc"><b>{{ exp.title }}</b> <br/> {{ exp.subtitle }}</div>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
 </div>
 
 <!-- ========== PROJECTS ========== -->
 <div class="docs-section" id="projects">
   <h4>Projects</h4>
-  <p> A history of what I've done outside of the classroom / my job. Feel free to check out my projects on Instagram: <a href="https://www.instagram.com/astroboticist/">tech projects</a>, and <a href="https://www.instagram.com/j.disign/">art projects</a> </p>
+  <p> A little snippet of my projects. </p>
 
   <ul class="tab-nav">
     <li><div class="button active" data-ref="#projects-selected">Selected</div></li>
-    <li><div class="button" data-ref="#projects-social">Social Good</div></li>
+    <li><div class="button" data-ref="#projects-social">Social Impact</div></li>
     <li><div class="button" data-ref="#projects-art">Art</div></li>
     <li><div class="button" data-ref="#projects-hardware">Hardware</div></li>
     <li><div class="button" data-ref="#projects-software">Software</div></li>
@@ -334,32 +314,6 @@ title: Personal Webpage
     </div>
   </div>
 
-</div>
-
-<!-- ========== PERSONAL========== -->
-<div class="docs-section" id="milestones">
-  <h4>Milestones</h4>
-
-  <p> It's always good to reflect on one's journey. Here is a timeline of things that were important to me.</p>
-
-  <!-- The Timeline -->
-  <ul class="timeline">
-    {% for exp in site.data.experience.experiences %}
-    <li>
-      {% if exp.category == "work" %}
-      <div class="direction-l">
-      {% else %}
-      <div class="direction-r">
-      {% endif %}
-        <div class="flag-wrapper">
-          <span class="flag">{{ exp.place }}</span>
-          <span class="time-wrapper"><span class="time">{{ exp.time }}</span></span>
-        </div>
-        <div class="desc"><b>{{ exp.title }}</b> <br/> {{ exp.subtitle }}</div>
-      </div>
-    </li>
-    {% endfor %}
-  </ul>
 </div>
 
 

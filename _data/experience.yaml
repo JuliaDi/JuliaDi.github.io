@@ -1,15 +1,27 @@
 experiences:
 
 - place: "Stanford"
+  time: "November 2024"
+  title: "Successful PhD Defense!"
+  subtitle: "I passed my PhD defense! Now a Dr. of robot stuff."
+  category: "school"
+
+- place: "Curated Innovation"
+  time: "March 2023"
+  title: "Started IP Strategy Consulting"
+  subtitle: "Led innovation sessions with many great clients to identify patent solutions."
+  category: "school"
+
+- place: "Stanford"
   time: "March 2023"
   title: "Back at School Full-time"
-  subtitle: "Time to finish my PhD in robot stuff :)"
-  category: "work"
+  subtitle: "Time to finish my PhD in robot stuff."
+  category: "school"
 
 - place: "New York City"
   time: "Summer 2021"
-  title: "Started Leave of Absence"
-  subtitle: "Worked in a variety of places!"
+  title: "Started Leave of Absence from PhD"
+  subtitle: "Stints in content marketing, meme-based education, autonomous trucking, and domestic robotics."
   category: "work"
 
 - place: "Stanford University"
@@ -36,18 +48,6 @@ experiences:
   subtitle: "Displayed art at Burning Man!"
   category: "work"
 
-- place: "Stanford University"
-  time: "September 2018"
-  title: "Ph.D. Student"
-  subtitle: "Turned down my dream lab <br/> to attend Stanford"
-  category: "school"
-
-- place: "Southeast Asia"
-  time: "January 2018"
-  title: "Backpacked through southeast Asia"
-  subtitle: "I got a mosquito bite that swelled <br/> to the size of a golf ball"
-  category: "work"
-
 - place: "Columbia University"
   time: "May 2018"
   title: "Graduation (magna cum laude)"
@@ -64,10 +64,4 @@ experiences:
   time: "Sept. 27, 2015"
   title: "Co-Founder, Co-President"
   subtitle: "Started an organization that defined my college years"
-  category: "school"
-
-- place: "Columbia University"
-  time: "Spring 2015"
-  title: "Decided to pursue engineering in college"
-  subtitle: "instead of writing and the arts"
   category: "school"

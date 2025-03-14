@@ -1,14 +1,49 @@
 news:
 
+  - date: "23 January 2025"
+    link: "https://www.robotdesign.studio/"
+    description: "Invited research talk at University of Michigan's Robot Studio."
+    selected: y
+
+  - date: "20 November 2025"
+    link: ""
+    description: "Successfully passed my PhD defense."
+    selected: y
+
+  - date: "10 July 2024"
+    link: "https://x.com/StanfordHAI/status/1811087755759472804"
+    description: "Featured interview for Stanford Institute for Human-Centered AI (HAI)."
+    selected: y
+
+  - date: "9 April 2024"
+    link: "https://techxplore.com/news/2024-04-miniaturized-vision-based-tactile-sensor.html"
+    description: "Interviewed about my research on TechXplore."
+    selected: y
+
+  - date: "5 June 2024"
+    link: "https://hai.stanford.edu/events/hai-five-celebrating-5-years-impact?section=poster-session"
+    description: "Featured sensor demo for Stanford HAI at Five conference."
+    selected: n
+
+  - date: "3 May 2024"
+    link: "https://2024.ieee-icra.org/"
+    description: "Selected as social media ambassador for ICRA 2024."
+    selected: n
+
+  - date: "20 June 2023"
+    link: "https://futurespaceleaders.org/"
+    description: "Selected as a Future Space Leader."
+    selected: n
+    
   - date: "15 July 2020"
     link: "https://www.discoverphds.com/advice/interviews/julia-di"
     description: "Interviewed for DiscoverPhDs!"
-    selected: y
+    selected: n
 
   - date: "12 July 2020"
     link: "https://sites.google.com/stanford.edu/roboticsretrospectives/home"
     description: "Happy to have presented my retrospective on tactile sensing at RSS 2020 Workshop" 
-    selected: y
+    selected: n
 
   - date: "29 July 2019"
     link: "https://www.geekyreality.com/blog/stemstories-julia-space-roboticist-usa/"

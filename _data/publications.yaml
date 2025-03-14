@@ -1,5 +1,41 @@
 papers:
 
+  - title: "Using Fiber Optic Bundles to Miniaturize Vision-based Tactile Sensors"
+    authors: "<b>Julia Di</b>, Zdravko Dugonjic, Will Fu, Tingfan Wu, Romeo Mercado, Kevin Sawyer, Victoria Rose Most, Gregg Kammerer, Stefanie Speidel, Richard E Fan, Geoffrey Sonn, Mark R Cutkosky, Mike Lambeta, Roberto Calandra"
+    venue: "IEEE Transactions on Robotics (2024)"
+    paper_pdf: "https://arxiv.org/pdf/2403.05500"
+    slides: 
+    video: 
+    code: 
+    selected: y
+
+  - title: "Locomotion As Manipulation With ReachBot"
+    authors: "Tony G. Chen, Stephanie Newdick, <b>Julia Di</b>, Carlo Bosio, Nitin Ongole, Mathieu Lapôtre, Marco Pavone, Mark R Cutkosky"
+    venue: "Science Robotics (2024)"
+    paper_pdf: "https://www.science.org/doi/abs/10.1126/scirobotics.adi9762"
+    slides: 
+    video: 
+    code: 
+    selected: y
+
+  - title: "AstrobeeCD: Change detection in microgravity with free-flying robots"
+    authors: "Holly Dinkel, <b>Julia Di</b>, Jamie Santos, Keenan Albee, Paulo VK Borges, Marina Moreira, Ryan Soussan, Oleg Alexandrov, Brian Coltin, Trey Smith"
+    venue: "Acta Astronautica (2024)"
+    paper_pdf: "https://www.sciencedirect.com/science/article/pii/S0094576524003539"
+    slides: 
+    video: 
+    code:  https://github.com/hollydinkel/astrobeecd
+    selected: y
+
+  - title: "A Skeleton-Based Approach For Rock Crack Detection Towards A Climbing Robot Application"
+    authors: "Josselin Somerville Roberts, Paul-Emile Giacomelli, Yoni Gozlan, <b>Julia Di</b> <i>(as Supervisor)</i>"
+    venue: "IEEE International Conference on Robotic Computing (2023) <b>Best Student Paper Award</b>"
+    paper_pdf: "https://ieeexplore.ieee.org/abstract/document/10473555"
+    slides: 
+    video: 
+    code: 
+    selected: y
+
   - title: "From the Lab Notebook: Observations on Tactile Sensing for Robotic Manipulation "
     authors: "<b>Julia Di</b>"
     venue: "Robotics: Science and Systems (2020)"
@@ -17,8 +53,7 @@ papers:
     selected: n
 
   - title: "Spyndra 1.0: An Open-Source Proprioceptive Robot for Studies in Machine Self-Awareness"
-    authors: "Ori Kedar, Christie Capper, Yan-Song Chen, Zhaoyang Chen, <b>Julia Di</b>, Yonah Elzora, Lingjian Kong,
-Yuanxia Lee, Julian Oks, Jorge Orbay, Fabian Stute, Chad Tarpley, Joni Mici, and Hod Lipson"
+    authors: "Ori Kedar, Christie Capper, Yan-Song Chen, Zhaoyang Chen, <b>Julia Di</b>, Yonah Elzora, Lingjian Kong, Yuanxia Lee, Julian Oks, Jorge Orbay, Fabian Stute, Chad Tarpley, Joni Mici, and Hod Lipson"
     venue: "Pre-print."
     paper_pdf: "/assets/publications/2018_spyndra/paper.pdf"
     slides: 

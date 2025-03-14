@@ -33,12 +33,12 @@ $(document).ready(function() {
       $( "body" ).addClass( "light-mode" );
       $( "nav" ).addClass( "light-mode" );
       $( "footer" ).addClass( "light-mode" );
-      $( ".light-mode-toggler" ).text( "OFF" );
+      $( ".light-mode-toggler" ).text( "DARK MODE" );
     } else {
       $( "body" ).removeClass( "light-mode" );
       $( "nav" ).removeClass( "light-mode" );
       $( "footer" ).removeClass( "light-mode" );
-      $( ".light-mode-toggler" ).text( "ON" );
+      $( ".light-mode-toggler" ).text( "LIGHT MODE" );
     }
   });
 
