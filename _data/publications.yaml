@@ -1,43 +1,54 @@
 papers:
 
   - title: "Using Fiber Optic Bundles to Miniaturize Vision-based Tactile Sensors"
-    authors: "<b>Julia Di</b>, Zdravko Dugonjic, Will Fu, Tingfan Wu, Romeo Mercado, Kevin Sawyer, Victoria Rose Most, Gregg Kammerer, Stefanie Speidel, Richard E Fan, Geoffrey Sonn, Mark R Cutkosky, Mike Lambeta, Roberto Calandra"
+    authors: "<u>Julia Di</u>, Zdravko Dugonjic, Will Fu, Tingfan Wu, Romeo Mercado, Kevin Sawyer, Victoria Rose Most, Gregg Kammerer, Stefanie Speidel, Richard E Fan, Geoffrey Sonn, Mark R Cutkosky, Mike Lambeta, Roberto Calandra"
     venue: "IEEE Transactions on Robotics (2024)"
     paper_pdf: "https://arxiv.org/pdf/2403.05500"
     slides: 
-    video: 
-    code: 
+    video: https://www.youtube.com/watch?v=JaLls5nyrX4
+    code: "https://github.com/facebookresearch/digit-design/tree/main"
     selected: y
 
   - title: "Locomotion As Manipulation With ReachBot"
-    authors: "Tony G. Chen, Stephanie Newdick, <b>Julia Di</b>, Carlo Bosio, Nitin Ongole, Mathieu Lapôtre, Marco Pavone, Mark R Cutkosky"
+    authors: "Tony G. Chen, Stephanie Newdick, <u>Julia Di</u>, Carlo Bosio, Nitin Ongole, Mathieu Lapôtre, Marco Pavone, Mark R Cutkosky"
     venue: "Science Robotics (2024)"
     paper_pdf: "https://www.science.org/doi/abs/10.1126/scirobotics.adi9762"
     slides: 
-    video: 
-    code: 
+    video: "https://youtu.be/N02lvgjVyeM?si=BFJsvY7TZWmdm4Vg"
+    code: "https://zenodo.org/records/10836305"
     selected: y
 
   - title: "AstrobeeCD: Change detection in microgravity with free-flying robots"
-    authors: "Holly Dinkel, <b>Julia Di</b>, Jamie Santos, Keenan Albee, Paulo VK Borges, Marina Moreira, Ryan Soussan, Oleg Alexandrov, Brian Coltin, Trey Smith"
+    authors: "Holly Dinkel, <u>Julia Di</u>, Jamie Santos, Keenan Albee, Paulo VK Borges, Marina Moreira, Ryan Soussan, Oleg Alexandrov, Brian Coltin, Trey Smith"
     venue: "Acta Astronautica (2024)"
     paper_pdf: "https://www.sciencedirect.com/science/article/pii/S0094576524003539"
     slides: 
     video: 
-    code:  https://github.com/hollydinkel/astrobeecd
+    code:  "https://github.com/hollydinkel/astrobeecd"
     selected: y
 
   - title: "A Skeleton-Based Approach For Rock Crack Detection Towards A Climbing Robot Application"
-    authors: "Josselin Somerville Roberts, Paul-Emile Giacomelli, Yoni Gozlan, <b>Julia Di</b> <i>(as Supervisor)</i>"
-    venue: "IEEE International Conference on Robotic Computing (2023) <b>Best Student Paper Award</b>"
+    authors: "Josselin Somerville Roberts, Paul-Emile Giacomelli, Yoni Gozlan, <u>Julia Di</u>"
+    venue: "IEEE International Conference on Robotic Computing (2023)"
+    award: "Best Student Paper Award (as Supervisor)"
     paper_pdf: "https://ieeexplore.ieee.org/abstract/document/10473555"
     slides: 
     video: 
-    code: 
+    code: "https://github.com/JosselinSomervilleRoberts/ReachBot-Predictor/"
     selected: y
 
+  - title: "A Multi-Axis FBG-Based Tactile Sensor for Gripping in Space"
+    authors: "Samuel Frishman<sup>‡</sup>, <u>Julia Di</u><sup>‡</sup>, Zulekha Karachiwalla, Richard J Black, Kian Moslehi, Trey Smith, Brian Coltin, Bijan Moslehi, Mark R Cutkosky"
+    venue: "IEEE/RSJ International Conference on Intelligent Robots and Systems (2021)"
+    paper_pdf: "https://ieeexplore.ieee.org/abstract/document/9635998"
+    slides:
+    video:
+    code:
+    selected: y     
+
+
   - title: "From the Lab Notebook: Observations on Tactile Sensing for Robotic Manipulation "
-    authors: "<b>Julia Di</b>"
+    authors: "<u>Julia Di</u>"
     venue: "Robotics: Science and Systems (2020)"
     paper_pdf: "/assets/publications/2020_retrospective/paper.pdf"
     slides: "https://docs.google.com/presentation/d/1zCKsdKma8-rMu14LsW1iBPuy6zN4gxDy1fSk2fSTh0E/edit?usp=sharing"
@@ -46,17 +57,17 @@ papers:
     selected: n
 
   - title: "Rapid Mission Concept Development at the 2019 Caltech Space Challenge: A Small Lander Network Studying the Habitability of Enceladus"
-    authors: "Katiyayni Balachandran, Paolo Cappuccio, <b>Julia Di</b>, Kelsey Doerksen, Jared Fuchs, Alessia Gloder, Rebecca Jolitz, Monica Li, Dan Limonchik, Lotfi Massarweh, Atila Meszaros, Daniel Naftalovich, Erica Nathan, Thomas Peev, Marc Rovira-Navarro, Shreya Santra"
+    authors: "Katiyayni Balachandran, Paolo Cappuccio, <u>Julia Di</u>, Kelsey Doerksen, Jared Fuchs, Alessia Gloder, Rebecca Jolitz, Monica Li, Dan Limonchik, Lotfi Massarweh, Atila Meszaros, Daniel Naftalovich, Erica Nathan, Thomas Peev, Marc Rovira-Navarro, Shreya Santra"
     venue: "3rd Symposium on Space Educational Activities."
     slides: "https://static1.squarespace.com/static/53f78ebbe4b0ce4d05e4231e/t/5cc6959f6e9a7f0f5259bfd0/1556518304710/fact_sheet_team_voyager.pdf"
     video: "https://www.youtube.com/watch?v=xIUK31lAhE8"
     selected: n
 
   - title: "Spyndra 1.0: An Open-Source Proprioceptive Robot for Studies in Machine Self-Awareness"
-    authors: "Ori Kedar, Christie Capper, Yan-Song Chen, Zhaoyang Chen, <b>Julia Di</b>, Yonah Elzora, Lingjian Kong, Yuanxia Lee, Julian Oks, Jorge Orbay, Fabian Stute, Chad Tarpley, Joni Mici, and Hod Lipson"
+    authors: "Ori Kedar, Christie Capper, Yan-Song Chen, Zhaoyang Chen, <u>Julia Di</u>, Yonah Elzora, Lingjian Kong, Yuanxia Lee, Julian Oks, Jorge Orbay, Fabian Stute, Chad Tarpley, Joni Mici, and Hod Lipson"
     venue: "Pre-print."
     paper_pdf: "/assets/publications/2018_spyndra/paper.pdf"
     slides: 
     video: 
-    code: https://github.com/Yonahel/Spyndra 
+    code: "https://github.com/Yonahel/Spyndra" 
     selected: n

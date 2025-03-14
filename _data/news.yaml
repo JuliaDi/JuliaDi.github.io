@@ -5,9 +5,9 @@ news:
     description: "Invited research talk at University of Michigan's Robot Studio."
     selected: y
 
-  - date: "20 November 2025"
-    link: ""
-    description: "Successfully passed my PhD defense."
+  - date: "20 November 2024"
+    link: "https://youtu.be/B8rVM_Yolyo"
+    description: "Successfully passed my PhD defense!"
     selected: y
 
   - date: "10 July 2024"
@@ -15,9 +15,9 @@ news:
     description: "Featured interview for Stanford Institute for Human-Centered AI (HAI)."
     selected: y
 
-  - date: "9 April 2024"
-    link: "https://techxplore.com/news/2024-04-miniaturized-vision-based-tactile-sensor.html"
-    description: "Interviewed about my research on TechXplore."
+  - date: "16 June 2024"
+    link: "https://me.stanford.edu/spring-2022-soe-jedi-graduation-award"
+    description: "Received Justice, Equity, Diversity, and Inclusion (JEDI) Award from the Stanford Department of Mechanical Engineering."
     selected: y
 
   - date: "5 June 2024"
@@ -28,6 +28,21 @@ news:
   - date: "3 May 2024"
     link: "https://2024.ieee-icra.org/"
     description: "Selected as social media ambassador for ICRA 2024."
+    selected: n
+
+  - date: "9 April 2024"
+    link: "https://techxplore.com/news/2024-04-miniaturized-vision-based-tactile-sensor.html"
+    description: "Interviewed about my research on TechXplore."
+    selected: n
+
+  - date: "1 April 2024"
+    link: "https://www.peointernational.org/educational-support/scholar-awards/"
+    description: "Awarded the full P.E.O. Scholarship after nomination."
+    selected: n
+
+  - date: "1 March 2024"
+    link: "https://astronautical.org/events/goddard/"
+    description: "Invited guest (fellowship awardee) to the AAS Goddard Memorial Symposium."
     selected: n
 
   - date: "20 June 2023"

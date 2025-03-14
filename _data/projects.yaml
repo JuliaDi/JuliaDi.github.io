@@ -46,8 +46,8 @@ projects:
     url: "projects/2018_spyndra.html"
     selected: n
     social: n
-    art: n
-    hardware: n
+    art: y
+    hardware: y
     software: n
     
   - title: "DivHacks 2018"

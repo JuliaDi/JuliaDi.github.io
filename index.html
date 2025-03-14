@@ -8,10 +8,10 @@ title: Personal Webpage
   <h4>Bio</h4>
 
   <p>
-  I recently earned my PhD from the <a href="http://bdml.stanford.edu/">Biomimetic & Dexterous Manipulation Laboratory</a> at Stanford University, advised by Mark Cutkosky. My dissertation work was on optical sensing for visual and tactile perception to improve the physical interaction capabilities of robots. My interests in life revolve around <b>robotic sensing</b>, <b>art</b>, <b>climate change and conservation</b>, and <b>social impact</b>.
+  I recently earned my PhD from the <a href="http://bdml.stanford.edu/">Biomimetic & Dexterous Manipulation Laboratory</a> at Stanford University, advised by Mark Cutkosky, for research on optical sensing for visual and tactile perception. During my PhD I was supported by a <a href="https://www.nasa.gov/directorates/stmd/space-tech-research-grants/nstrf-2018/">NASA Space Technology Research Fellowship</a> (for first try at the PhD), <a href="https://www.peointernational.org/educational-support/scholar-awards/">P.E.O. Scholarship</a>, <a href="https://www.zonta.org/Web/Web/Programs/Education/Amelia_Earhart_Fellowship.aspx">Zonta Amelia Earhart Fellowship</a>, and the <a href="https://futurespaceleaders.org/">Future Space Leaders Foundation</a>. I care about a great many things in life, including: <b>robotic sensing</b>, <b>space exploration</b>, </b><b>art</b>, <b>climate change and conservation</b>, and <b>social impact</b>. 
   </p>
 
-  <p>In the past I have worked on NASA robots, an X-plane, and domestic robots; I've also done a few thru-hike sections (so far El Camino de Santiago, John Muir Trail), jumped out of a plane, and earned an open water dive license. I have been very grateful to receive the 2020 Interact Fellowship, 2019 Threshold Ventures Fellowship, 2018 Brooke Owens Fellowship, and 2017 AIAA 20 Twenties Laureate. I received my B.S. in Electrical Engineering from Columbia University in 2018, where I started the <a href="http://www.columbiaspace.org">Columbia Space Initiative</a> and was very active on campus as a student organization leader.
+  <p>In the past I have worked on NASA robots, an X-plane, and domestic robots; I've also done a few thru-hike sections (so far El Camino de Santiago and John Muir Trail), jumped out of a plane, and earned an open water dive license. I have been grateful for the recognition and support provided by the 2020 Interact Fellowship, 2019 Threshold Ventures Fellowship, 2018 Brooke Owens Fellowship, and 2017 AIAA 20 Twenties. I received my B.S. in Electrical Engineering from Columbia University in 2018, where I started the <a href="http://www.columbiaspace.org">Columbia Space Initiative</a> and was very active on campus as a student organization leader.
   </p>
 </div>
 
@@ -60,7 +60,7 @@ title: Personal Webpage
         <div class="paper">
           <p class="title"><b>{{ paper.title }}</b></p>
           <p>{{ paper.authors }}</p>
-          <p><i>{{ paper.venue }}</i></p>
+          <p><i>{{ paper.venue }}</i></p><p style="color: red;"><i>{{ paper.award }}</i></p>
            <div class="paper-buttons">
             {% if paper.paper_pdf %}
               <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">Paper</a>
@@ -115,15 +115,12 @@ title: Personal Webpage
 <!-- ========== PROJECTS ========== -->
 <div class="docs-section" id="projects">
   <h4>Projects</h4>
-  <p> A little snippet of my projects. </p>
+  <p> Some projects for fun. </p>
 
   <ul class="tab-nav">
     <li><div class="button active" data-ref="#projects-selected">Selected</div></li>
-    <li><div class="button" data-ref="#projects-social">Social Impact</div></li>
+    <li><div class="button" data-ref="#projects-social">Outreach</div></li>
     <li><div class="button" data-ref="#projects-art">Art</div></li>
-    <li><div class="button" data-ref="#projects-hardware">Hardware</div></li>
-    <li><div class="button" data-ref="#projects-software">Software</div></li>
-    <li><div class="button" data-ref="#projects-all">All</div></li>
   </ul>
 
   <div class="tab-content">
@@ -189,130 +186,39 @@ title: Personal Webpage
         {% endif %}
       {% endfor %}
     </div>
+  
+
+  <div class="tab-pane" id="projects-art">
+    {% assign art_projects = site.data.projects.projects | where: "art", "y" %}
+    {% for project in art_projects %}
+      {% assign index_modulo = forloop.index0 | modulo:3 %}
+      {% if index_modulo == 0 %}
+        <div class="row">
+      {% endif %}
+
+        <div class="four columns">
+          <div class="project-container">
+
+              <div class="project-image-container">
+                <a href="{{ project.url }}">
+                  <img src="{{ project.thumbnail }}" class="u-max-full-width" />
+                </a>
+              </div>
+
+              <div class="project-caption">
+                <b>{{ project.title }}</b> <br/>
+                {{ project.subtitle }}
+              </div>
+
+          </div>
+        </div>
+
+      {% if index_modulo == 2 %}
+        </div>
+      {% endif %}
+    {% endfor %}
   </div>
-    <div class="tab-pane" id="projects-art">
-      {% assign art_projects = site.data.projects.projects | where: "art", "y" %}
-      {% for project in art_projects %}
-        {% assign index_modulo = forloop.index0 | modulo:3 %}
-        {% if index_modulo == 0 %}
-          <div class="row">
-        {% endif %}
 
-          <div class="four columns">
-            <div class="project-container">
-
-                <div class="project-image-container">
-                  <a href="{{ project.url }}">
-                    <img src="{{ project.thumbnail }}" class="u-max-full-width" />
-                  </a>
-                </div>
-
-                <div class="project-caption">
-                  <b>{{ project.title }}</b> <br/>
-                  {{ project.subtitle }}
-                </div>
-
-            </div>
-          </div>
-
-        {% if index_modulo == 2 %}
-          </div>
-        {% endif %}
-      {% endfor %}
-    </div>
-  </div>
-    <div class="tab-pane" id="projects-hardware">
-      {% assign hw_projects = site.data.projects.projects | where: "hardware", "y" %}
-      {% for project in hw_projects %}
-        {% assign index_modulo = forloop.index0 | modulo:3 %}
-        {% if index_modulo == 0 %}
-          <div class="row">
-        {% endif %}
-
-          <div class="four columns">
-            <div class="project-container">
-
-                <div class="project-image-container">
-                  <a href="{{ project.url }}">
-                    <img src="{{ project.thumbnail }}" class="u-max-full-width" />
-                  </a>
-                </div>
-
-                <div class="project-caption">
-                  <b>{{ project.title }}</b> <br/>
-                  {{ project.subtitle }}
-                </div>
-
-            </div>
-          </div>
-
-        {% if index_modulo == 2 %}
-          </div>
-        {% endif %}
-      {% endfor %}
-    </div>
-  </div>
-    <div class="tab-pane" id="projects-software">
-      {% assign sw_projects = site.data.projects.projects | where: "software", "y" %}
-      {% for project in sw_projects %}
-        {% assign index_modulo = forloop.index0 | modulo:3 %}
-        {% if index_modulo == 0 %}
-          <div class="row">
-        {% endif %}
-
-          <div class="four columns">
-            <div class="project-container">
-
-                <div class="project-image-container">
-                  <a href="{{ project.url }}">
-                    <img src="{{ project.thumbnail }}" class="u-max-full-width" />
-                  </a>
-                </div>
-
-                <div class="project-caption">
-                  <b>{{ project.title }}</b> <br/>
-                  {{ project.subtitle }}
-                </div>
-
-            </div>
-          </div>
-
-        {% if index_modulo == 2 %}
-          </div>
-        {% endif %}
-      {% endfor %}
-    </div>
-  </div>
-    <div class="tab-pane" id="projects-all">
-      {% for project in site.data.projects.projects %}
-        {% assign index_modulo = forloop.index0 | modulo:3 %}
-        {% if index_modulo == 0 %}
-          <div class="row">
-        {% endif %}
-
-          <div class="four columns">
-            <div class="project-container">
-
-                <div class="project-image-container">
-                  <a href="{{ project.url }}">
-                    <img src="{{ project.thumbnail }}" class="u-max-full-width" />
-                  </a>
-                </div>
-
-                <div class="project-caption">
-                  <b>{{ project.title }}</b> <br/>
-                  {{ project.subtitle }}
-                </div>
-
-            </div>
-          </div>
-
-        {% if index_modulo == 2 %}
-          </div>
-        {% endif %}
-      {% endfor %}
-    </div>
-  </div>
 
 </div>
 
