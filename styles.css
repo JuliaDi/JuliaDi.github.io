@@ -1,0 +1,363 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --link-color: #A8C8DC;
+    --border-color: #000000;
+}
+
+body.dark-mode {
+    --bg-color: #1a1a1a;
+    --text-color: #e0e0e0;
+    --link-color: #7BA3C4;
+    --border-color: #ffffff;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+    background-color: var(--bg-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--link-color);
+    border-radius: 6px;
+    border: 2px solid var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--link-color);
+    opacity: 0.8;
+}
+
+/* Moon */
+.moon {
+    position: fixed;
+    right: 30px;
+    top: 100px;
+    width: 40px;
+    height: 40px;
+    color: var(--link-color);
+    z-index: 1000;
+    transition: top 0.1s ease-out;
+    pointer-events: none;
+}
+
+.moon svg {
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Navigation */
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.nav-link {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--link-color);
+}
+
+.dark-mode-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    margin-left: auto;
+    transition: color 0.3s ease;
+}
+
+.dark-mode-toggle:hover {
+    color: var(--link-color);
+}
+
+.sun-icon {
+    display: block;
+}
+
+.moon-icon {
+    display: none;
+}
+
+body.dark-mode .sun-icon {
+    display: none;
+}
+
+body.dark-mode .moon-icon {
+    display: block;
+}
+
+/* Sections */
+.section {
+    margin-bottom: 4rem;
+}
+
+/* About Section */
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 2rem;
+    align-items: start;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.photo-placeholder {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: var(--bg-color);
+    border: 2px solid var(--link-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.photo-placeholder svg {
+    width: 80px;
+    height: 80px;
+}
+
+.photo-placeholder p {
+    font-size: 0.75rem;
+    color: var(--text-color);
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+.name {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.title {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+}
+
+.bio {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.link {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.separator {
+    color: var(--text-color);
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+    border-left: 4px solid var(--link-color);
+    padding-left: 1rem;
+}
+
+.section-text {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--text-color);
+}
+
+/* Publications */
+.publication {
+    margin-bottom: 1.5rem;
+    padding-left: 1rem;
+    border-left: 2px solid var(--link-color);
+}
+
+.pub-title {
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    color: var(--text-color);
+}
+
+.pub-authors {
+    font-size: 0.95rem;
+    margin-bottom: 0.25rem;
+    color: var(--text-color);
+}
+
+.pub-venue {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: var(--text-color);
+}
+
+/* Teaching */
+.course {
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    border-left: 2px solid var(--link-color);
+}
+
+.course-title {
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    color: var(--text-color);
+}
+
+.course-semester {
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+
+/* Contact */
+.contact-text {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--text-color);
+}
+
+.contact-text strong {
+    font-weight: 600;
+}
+
+/* Fun Section */
+.fun-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.fun-item {
+    padding: 1.5rem;
+    border: 1px solid var(--link-color);
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.fun-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(168, 200, 220, 0.3);
+    border-color: var(--text-color);
+}
+
+.fun-title {
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: var(--text-color);
+}
+
+.fun-text {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+/* Footer */
+.footer {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--text-color);
+}
+
+.footer-text {
+    font-size: 0.85rem;
+    color: var(--text-color);
+    opacity: 0.8;
+    line-height: 1.6;
+}
+
+.footer-link {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .container {
+        padding: 1.5rem;
+    }
+    
+    .nav {
+        gap: 1rem;
+    }
+    
+    .about-content {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    
+    .name {
+        font-size: 2rem;
+    }
+    
+    .section-title {
+        font-size: 1.3rem;
+    }
+    
+    .fun-content {
+        grid-template-columns: 1fr;
+    }
+}
